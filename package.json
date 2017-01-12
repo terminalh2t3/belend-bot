@@ -1,0 +1,43 @@
+{
+  "name": "belend-bot",
+  "version": "1.0.0",
+  "description": "Facebook Messenger Bot Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive test/*",
+    "test:watch": "npm test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terminalh2t3/belend-bot.git"
+  },
+  "keywords": [
+    "messenger",
+    "bot",
+    "chatbot",
+    "chat",
+    "bot",
+    "facebook"
+  ],
+  "author": "Vu Tuan Anh<anhvt39@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/terminalh2t3/belend-bot/issues"
+  },
+  "homepage": "https://github.com/terminalh2t3/belend-bot/#readme",
+  "dependencies": {
+    "bootbot": "^1.0.7",
+    "node-fetch": "^1.6.3",
+    "node-wit": "^4.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "chai": "^3.5.0",
+    "fetch-mock": "^5.8.1",
+    "mocha": "^2.5.3",
+    "node-fetch": "^1.6.3",
+    "sinon": "^1.17.4"
+  }
+}
