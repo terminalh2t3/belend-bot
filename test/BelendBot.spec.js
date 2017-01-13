@@ -34,7 +34,7 @@ describe('BelendBot', () => {
     });
 
     it('throws an error if there are missing tokens', () => {
-        assert(() => new BootBot()).to.throw(Error);
+        assert(() => new BelendBot()).to.throw(Error);
     });
 
     it('can send a text message', () => {
@@ -245,5 +245,18 @@ describe('BelendBot', () => {
         const domains = ['http://sometestdomain.com','http://www.cooldomain.com'];
         bot.setWhiteListDomain(domains);
         assert(spy.calledWith(domains)).to.equal(true);
+    });
+
+    it('can load wit.ai', () => {
+        const options = {
+            accessToken: '1234',
+            verifyToken: '5678',
+            appSecret: 'foobar',
+            witToken: '6688',
+            witActionDir: require('path').join(__dirname, '/actions')
+        };
+        userId = 1234;
+        bot = new BelendBot(options);
+        assert(bot instanceof BelendBot).to.equal(true);
     });
 });
