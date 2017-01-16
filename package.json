@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha --recursive test/*",
     "test:watch": "npm test -- --watch",
-    "postinstall": "node ./scripts/build.js"
+    "postinstall": "npm install bootbot"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/terminalh2t3/belend-bot/#readme",
   "dependencies": {
+    "bluebird": "^3.4.7",
     "bootbot": "^1.0.7",
     "node-fetch": "^1.6.3",
     "node-wit": "^4.2.0"
